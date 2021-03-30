@@ -1,0 +1,163 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Roboto',sans-serif;
+    
+}
+.container{
+    margin: 0% 5%;
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(47, 128, 237, 0.3);
+    
+}
+.contact{
+    display: flex;
+    width: 98%;
+    margin: 0.5% 1%;
+    height: 98.5vh;
+}
+.title h1{ 
+     margin-left:2%;
+     padding: 5px;
+}
+.title h2{
+    text-align: center;
+    padding: 5px;
+}
+.title { 
+    background-color: #2F80ED;
+    color: white;
+    border: 1px solid #2F80ED;
+    
+    
+}
+.formulaire-contact{
+    width: 44.5%;
+    margin-right:0.5% ;
+    background-color: #F6F6F6;
+    border: 1px solid rgba(47, 128, 237, 0.3);
+    height: 89.5vh;
+}
+
+.formulaire-contact form{
+    margin: 5% 2%;
+    height: 100%;
+
+}
+.formulaire-contact .container-input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+.formulaire-contact .container-input input{
+    border: 1px solid rgba(47, 128, 237, 0.3);
+    padding: 1%;
+}
+label{
+    color: #2F80ED;
+}
+.formulaire-contact select{
+    border: 1px solid rgba(47, 128, 237, 0.3);
+    padding: 1%;
+    background-color: #fff;
+}
+textarea{
+    resize: none;
+    max-width: 100%;
+    border: 1px solid rgba(47, 128, 237, 0.3);
+    
+}
+select {
+    appearance: none;
+    background-image: url(./images/icons8-sort-down-96_360.png);
+    background-size: 30px;
+    background-position: calc(98%) center;
+    background-repeat: no-repeat;
+}
+textarea:focus,input:focus,select:focus {
+    border: 1px solid rgba(47, 128, 237, 0.3);
+    outline: none;
+}
+.formulaire-contact .btn{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.formulaire-contact .btn button{
+    width: 45%;
+    padding: 3%;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0px 4px 4px 4px rgba(0,0,0,0.25);
+    
+}
+.formulaire-contact .btn button:focus{
+    outline: none;
+}
+.formulaire-contact .btn button:nth-child(1){
+    background-color: #2F80ED;
+    border: transparent;
+}
+.formulaire-contact .btn button:nth-child(2){
+    background-color: #EB5757;
+    border: transparent;
+}
+.Container-avatar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30%;
+}
+.Container-avatar .images-block,.container-image{
+    width: 20%;
+    height: 20%;
+    /* border: 1px solid yellow; */
+}
+.btnImage .images img,.profil-image{
+    width: 100%;
+    height: 100%;
+}
+
+.liste{
+    width: 55%;
+    background-color: #F6F6F6;
+    border: 1px solid rgba(47, 128, 237, 0.3);
+    display: flex;
+    flex-direction: column;
+    height: 89.5vh;
+}
+.btn-supprime{
+    color: red;
+    font-size: 20px;
+    background-color: white;
+    width: 5%;
+    height: 10px;
+    border: 1px solid white;
+    font-weight: bold;
+   
+}
+
+.btn-supprime:focus,.btn-supprime:active{
+    border-style:none;
+   
+}
+.zone-contact{
+
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    background-color: white;
+    border: 1px solid #2F80ED;
+    /* box-shadow:0px 0px ; */
+}
+.liste-contact{
+    height: 550px;
+    overflow-y: scroll;
+}
+.affiche-identite{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;0,900;1,200;1,700&family=Roboto&family=Ubuntu+Mono&display=swap"
+        rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="/Semantic-UI/semantic.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <title>repertoire</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Répertoire de contact</h1>
+        </div>
+        <div class="contact">
+            <div class="formulaire-contact">
+                <div class="title">
+                    <h2> Formulaire de contact</h2>
+                </div>
+                <form action="" method="post">
+                    <div class="formulaire">
+                        <div class="container-input">
+                            <label for="prenom">Prénom</label>
+                            <input type="text" name="prenom" id="prenom" value="">
+                        </div>
+                        <div class="container-input">
+                            <label for="nom">Nom</label>
+                            <input type="text" name="nom" id="nom" value="">
+                        </div>
+                        <div class="container-input">
+                            <label for="groupe">Groupe</label>
+                            <select name="groupe" id="groupe">
+                                <option value="0" disabled hidden selected>Choisissez votre groupe?</option>
+                                <option value="Mère">Mère</option>
+                                <option value="Père">Père</option>
+                                <option value="soeur">Soeur</option>
+                                <option value="Soeur">Frère</option>
+                                <option value="Ami">Ami</option>
+                                <option value="Autres">Autres</option>
+                            </select>
+                        </div>
+                        <div class="container-input">
+                            <label for="biograpgie">BIO</label>
+                            <textarea name="biograpgie" id="biograpgie" cols="20" rows="10"></textarea>
+                        </div>
+                        <div class="Container-avatar">
+                            <input type="file" name="file" id="btn-image" accept="image/png, image/jpeg" value="">
+                            <div class="images-block">
+                                <img class="ui medium circular image" src="./images/iconfinder_icon-ios7-contact-outline_211731.png" alt="pour le contact" id="avatar-images">
+                            </div>
+                            
+                        </div>
+                        <div class="btn">
+                            <button id="creer" type="submit">Créer</button>
+                            <button id="reini" type="reset">Réini</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="liste">
+                <div class="title">
+                    <h2>Liste de contact</h2>
+                </div>
+                <div id="liste-contact" class="liste-contact"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
